@@ -1,0 +1,38 @@
+{
+  "name": "hyperjournal-desktop",
+  "description": "",
+  "version": "0.0.0",
+  "author": {
+    "name": "Emil Bay",
+    "email": "github@tixz.dk",
+    "url": "http://bayes.dk/"
+  },
+  "bugs": {
+    "url": "https://github.com/emilbayes/hyperjournal-desktop/issues"
+  },
+  "dependencies": {
+    "@mmckegg/mutant": "^3.6.1",
+    "hyperx": "^2.0.5",
+    "routes": "^2.1.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.3.0",
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0",
+    "spectron": "^3.4.0",
+    "standard": "^8.4.0"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "src/main.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/emilbayes/hyperjournal-desktop.git"
+  },
+  "scripts": {
+    "package": "electron-packager . 'Hyperjournal'",
+    "package-all": "electron-packager . 'Hyperjournal' --platform=all --arch=all",
+    "start": "electron ."
+  }
+}
